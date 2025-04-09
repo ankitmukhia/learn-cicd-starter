@@ -1,5 +1,4 @@
 name: bun CI
-// linting and formatting
 on:
   push:
     paths:
