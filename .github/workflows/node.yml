@@ -6,15 +6,13 @@ on:
       - "cli-ascii-converter/**"
   pull_request:
     branch: [main]
+    paths:
+      - "cli-ascii-converter/**"
 
 jobs:
   setup:
     name: Setup Project
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: cli-ascii-converter
 
     steps:
       - name: Check out code
@@ -27,3 +25,4 @@ jobs:
 
       - name: Install dep & dev-dep
         run: bun install
+        working-directory: cli-ascii-converter
