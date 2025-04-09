@@ -1,2 +1,1 @@
-https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg
-![alt text goes here](IMAGE_URL)
+![alt text goes here](https://github.com/ankitmukhia/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
