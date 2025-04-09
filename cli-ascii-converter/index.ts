@@ -11,9 +11,7 @@ function stringToAscii(input: string) {
     .join(",");
 }
 
-function evaluate(line: string) {
-  const userPrompt = line.toLowerCase().trim();
-  try {
+function evaluate(line: string) {const userPrompt = line.toLowerCase().trim();try {
     const toAscii = stringToAscii(userPrompt);
     return toAscii;
   } catch (err) {
@@ -28,7 +26,7 @@ const rl = readline.createInterface({
 });
 
 console.log(
-  "🤖 Welcome to CLI-Ascii Converter! Give me anything or type 'exit' to quit.",
+  "Welcome to CLI-Ascii Converter! Give me anything or type 'exit' to quit.",
 );
 rl.prompt();
 
