@@ -1,4 +1,4 @@
-name: ci
+name: Golang CI
 
 on:
   pull_request:
