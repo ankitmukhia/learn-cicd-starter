@@ -28,7 +28,7 @@ const rl = readline.createInterface({
 });
 
 console.log(
-  "🤖 Welcome to CLI-Ascii Converter! Give me anything or type 'exit' to quit.",
+  "Welcome to CLI-Ascii Converter! Give me anything or type 'exit' to quit.",
 );
 rl.prompt();
 
