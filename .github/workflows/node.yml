@@ -12,6 +12,10 @@ jobs:
     name: Setup Project
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: cli-ascii-converter
+
     steps:
       - name: Check out code
         uses: actions/checkout@v4
