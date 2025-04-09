@@ -26,6 +26,6 @@ jobs:
         run: bun install
         working-directory: cli-ascii-converter
 
-      - name: Run Formatting
-        run: bunx prettier --write .
+      - name: Check Formatting
+        run: bunx prettier --check .
         working-directory: cli-ascii-converter
