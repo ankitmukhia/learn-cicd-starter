@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: "1.2.4"
 
-      - name: Install dep & dev-dep
+      - name: Install dep && dev-dep
         run: bun install
         working-directory: cli-ascii-converter
 
