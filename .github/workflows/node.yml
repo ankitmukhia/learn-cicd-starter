@@ -1,5 +1,5 @@
 name: bun CI
-
+// linting and formatting
 on:
   push:
     paths:
@@ -25,4 +25,8 @@ jobs:
 
       - name: Install dep & dev-dep
         run: bun install
+        working-directory: cli-ascii-converter
+
+      - name: Run Formatting
+        run: bunx prettier --write .
         working-directory: cli-ascii-converter

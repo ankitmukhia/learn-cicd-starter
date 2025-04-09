@@ -11,9 +11,7 @@ function stringToAscii(input: string) {
     .join(",");
 }
 
-function evaluate(line: string) {
-  const userPrompt = line.toLowerCase().trim();
-  try {
+function evaluate(line: string) {const userPrompt = line.toLowerCase().trim();try {
     const toAscii = stringToAscii(userPrompt);
     return toAscii;
   } catch (err) {
